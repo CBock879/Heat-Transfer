@@ -21,7 +21,7 @@ specific_heat = np.ones([xsize,ysize])
 temperature[int(xsize/2),int(ysize/2)] = 1.1
            
 time_steps = 100
-dt = 1
+dt = 0.1
 
 #law of heat transfer
 r = lambda dT,dx,k: (-k) * (dT/dx)
