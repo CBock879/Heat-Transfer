@@ -9,13 +9,13 @@ import numpy as np
 import matplotlib.pyplot as pyp
 
 
-xsize = 20
-ysize = 20 
+xsize = 30
+ysize = 30 
 
 
 #mesh
 temperature = np.ones([xsize,ysize])
-conductivity = np.full([xsize,ysize],0.02)
+conductivity = np.full([xsize,ysize],0.2)
 specific_heat = np.ones([xsize,ysize])
 
 temperature[int(xsize/2),int(ysize/2)] = 1.1
