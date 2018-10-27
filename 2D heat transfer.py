@@ -14,14 +14,20 @@ ysize = 30
 
 
 #mesh
-temperature = np.ones([xsize,ysize])
-conductivity = np.full([xsize,ysize],0.2)
+temperature = np.zeros([xsize,ysize])
+conductivity = np.full([xsize,ysize],0.01)
 specific_heat = np.ones([xsize,ysize])
+
+
+
+conductivity[13][:] =  0.96
 
 temperature[int(xsize/2),int(ysize/2)] = 1.1
            
-time_steps = 100
-dt = 0.1
+            
+            
+time_steps = 300
+dt = 0.05
 
 #law of heat transfer
 r = lambda dT,dx,k: (-k) * (dT/dx)
